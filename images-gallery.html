@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 32</div>
+    <img src="gallery-images/i1.JPG" style="width:100%" height="700px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 32</div>
+    <img src="gallery-images/i2.JPG" style="width:100%" height="700px">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 32</div>
+    <img src="gallery-images/i3.JPG" style="width:100%" height="700px">
+  </div>  
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 32</div>
+    <img src="gallery-images/i4.JPG" style="width:100%" height="700px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 32</div>
+    <img src="gallery-images/i5.JPG" style="width:100%" height="700px">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 32</div>
+    <img src="gallery-images/i6.JPG" style="width:100%" height="700px">
+  </div>
+  <div class="mySlides">
+      <div class="numbertext">7 / 32</div>
+      <img src="gallery-images/i7.JPG" style="width:100%" height="700px">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">8 / 32</div>
+    <img src="gallery-images/i8.JPG" style="width:100%" height="700px">
+  </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">9 / 32</div>
+      <img src="gallery-images/i9.JPG" style="width:100%" height="700px">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">10 / 32</div>
+      <img src="gallery-images/i10.JPG" style="width:100%" height="700px">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">11 / 32</div>
+      <img src="gallery-images/i11.JPG" style="width:100%" height="700px">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">12 / 32</div>
+      <img src="gallery-images/i12.JPG" style="width:100%" height="700px">
+    </div>
+    <div class="mySlides">
+          <div class="numbertext">13 / 32</div>
+          <img src="gallery-images/i13.JPG" style="width:100%" height="700px">
+        </div>
+      
+    <div class="mySlides">
+          <div class="numbertext">14 / 32</div>
+          <img src="gallery-images/i14.JPG" style="width:100%" height="700px">
+        </div>
+      
+    <div class="mySlides">
+          <div class="numbertext">15 / 32</div>
+          <img src="gallery-images/i15.JPG" style="width:100%" height="700px">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">16 / 32</div>
+          <img src="gallery-images/i16.JPG" style="width:100%" height="700px">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">17 / 32</div>
+          <img src="gallery-images/i17.JPG" style="width:100%" height="700px">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">18 / 32</div>
+          <img src="gallery-images/i18.JPG" style="width:100%" height="700px">
+        </div>
+        <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">19 / 32</div>
+              <img src="gallery-images/i19.JPG" style="width:100%" height="700px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">20 / 32</div>
+              <img src="gallery-images/i20.JPG" style="width:100%" height="700px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">21 / 32</div>
+              <img src="gallery-images/i21.JPG" style="width:100%" height="700px">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">22 / 32</div>
+              <img src="gallery-images/i22.JPG" style="width:100%" height="700px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">23 / 32</div>
+              <img src="gallery-images/i23.JPG" style="width:100%" height="700px">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">24 / 32</div>
+              <img src="gallery-images/i24.JPG" style="width:100%" height="700px">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">25 / 32</div>
+                <img src="gallery-images/i25.JPG" style="width:100%" height="700px">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">26 / 32</div>
+                <img src="gallery-images/i26.JPG" style="width:100%" height="700px">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">27 / 32</div>
+                <img src="gallery-images/i27.JPG" style="width:100%" height="700px">
+              </div>
+              <div class="container">
+                  <div class="mySlides">
+                    <div class="numbertext">28 / 32</div>
+                    <img src="gallery-images/i28.JPG" style="width:100%" height="700px">
+                  </div>
+                
+                  <div class="mySlides">
+                    <div class="numbertext">29 / 32</div>
+                    <img src="gallery-images/i29.JPG" style="width:100%" height="700px">
+                  </div>
+                
+                  <div class="mySlides">
+                    <div class="numbertext">30 / 32</div>
+                    <img src="gallery-images/i30.JPG" style="width:100%" height="700px">
+                  </div>
+                    
+                  <div class="mySlides">
+                    <div class="numbertext">31 / 32</div>
+                    <img src="gallery-images/i31.JPG" style="width:100%" height="700px">
+                  </div>
+                
+                  <div class="mySlides">
+                    <div class="numbertext">32 / 32</div>
+                    <img src="gallery-images/i32.JPG" style="width:100%" height="700px">
+                  </div>
+              </div>
+        </div>
+        
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="gallery-images/i1.JPG" style="width:100%"  onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery-images/i2.JPG" style="width:100%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery-images/i3.JPG" style="width:100%" height="142px" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery-images/i4.JPG" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery-images/i5.JPG" style="width:100%" onclick="currentSlide(5)" >
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="gallery-images/i6.JPG" style="width:100%" onclick="currentSlide(6)" >
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="gallery-images/i7.JPG" style="width:100%" onclick="currentSlide(7)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i8.JPG" style="width:100%" onclick="currentSlide(8)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i9.JPG" style="width:100%" onclick="currentSlide(9)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i10.JPG" style="width:100%" onclick="currentSlide(10)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i11.JPG" style="width:100%" onclick="currentSlide(11)" >
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i12.JPG" style="width:100%" onclick="currentSlide(12)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i13.JPG" style="width:100%" onclick="currentSlide(13)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i14.JPG" style="width:100%" onclick="currentSlide(14)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i15.JPG" style="width:100%" onclick="currentSlide(15)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i16.JPG" style="width:100%" onclick="currentSlide(16)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i17.JPG" style="width:100%" onclick="currentSlide(17)" >
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i18.JPG" style="width:100%" onclick="currentSlide(18)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i19.JPG" style="width:100%" onclick="currentSlide(19)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i20.JPG" style="width:100%" onclick="currentSlide(20)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i21.JPG" style="width:100%" onclick="currentSlide(21)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i22.JPG" style="width:100%" onclick="currentSlide(22)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i23.JPG" style="width:100%" onclick="currentSlide(23)" >
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i24.JPG" style="width:100%" onclick="currentSlide(24)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i25.JPG" style="width:100%" onclick="currentSlide(25)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i26.JPG" style="width:100%" onclick="currentSlide(26)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i27.JPG" style="width:100%" onclick="currentSlide(27)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i28.JPG" style="width:100%" onclick="currentSlide(28)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i29.JPG" style="width:100%" onclick="currentSlide(29)" >
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i30.JPG" style="width:100%" onclick="currentSlide(30)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i31.JPG" style="width:100%" onclick="currentSlide(31)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery-images/i32.JPG" style="width:100%" onclick="currentSlide(32)" >
+      </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
